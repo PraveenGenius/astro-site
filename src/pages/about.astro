@@ -1,0 +1,63 @@
+---
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer.astro';
+import Nav from '../components/Nav.astro';
+---
+
+<html lang="en">
+	<head>
+		<MainHead title="About | Praveen" description="About Praveen" />
+		<style>
+			.heroImg {
+				max-height: 24rem;
+				object-fit: cover;
+				overflow: hidden;
+			}
+
+			.heroImg img {
+				width: 100%;
+			}
+
+			.bio {
+				font-size: var(--f-u1);
+				line-height: 2;
+				margin-top: 4em;
+			}
+
+			.wrapper.bio {
+				max-width: 50em;
+			}
+		</style>
+	</head>
+	<body>
+		<Nav />
+		<div class="wrapper">
+			<h1>About Praveen</h1>
+			<div class="heroImg">
+				<img
+					width="1400"
+					height="350"
+					src="https://scx2.b-cdn.net/gfx/news/2020/spacex.jpg"
+				/>
+			</div>
+			<div class="bio wrapper">
+				<p>
+					Hello, World!
+				</p>
+				<p>
+					I like to code in C, learning full stack right now, learned Networking from Cisco so that I can fix your Wi-Fi and DTH :)
+				</p>
+				<p>
+					Not a pro coder but can Google better, Gaming is one of my favourite hobby along with Computer Assembly and Repair (more info will be leaked on CV), So yea you can call me a nerd now!
+				</p>
+				<p>
+					I spent most of my life with wires and in front of monitors staring at PowerShell and Kali terminals for hours...days. Those sleepless nights of coding were hard but it was worth it (my GitHub and tech stack is under construction also this site will be upgraded soon) .
+				</p>
+				<p>
+					CS was the biggest move I made 6 years back and I am not regretting it...
+				</p>
+			</div>
+		</div>
+		<Footer />
+	</body>
+</html>
